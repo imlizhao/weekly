@@ -8,7 +8,7 @@ import SearchIcon from './SearchIcon.astro';
     data-open-modal
     disabled
     class="flex items-center justify-center rounded-md gap-1 search-icon"
-    title="输入/进行搜索"
+    title="Input/Search"
   >
     <SearchIcon />
   </button>
@@ -97,11 +97,11 @@ import SearchIcon from './SearchIcon.astro';
               bundlePath: import.meta.env.BASE_URL.replace(/\/$/, '') + '/pagefind/',
               showImages: false,
               translations: {
-                placeholder: '搜索潮流内容',
-                zero_results: '没有找到 [SEARCH_TERM]',
-                many_results: '[COUNT] 条搜索命中 [SEARCH_TERM]',
-                clear_search: '清除',
-                load_more: '加载更多结果',
+                placeholder: 'Search trending content',
+                zero_results: 'No results found for [SEARCH_TERM]',
+                many_results: '[COUNT] search results for [SEARCH_TERM]',
+                clear_search: 'Clear',
+                load_more: 'Load more results',
               },
             });
           });
