@@ -5,7 +5,7 @@ import HeadSEO from '../components/HeadSEO.astro';
 import Footer from '../components/Footer.astro';
 import AstroLogo from '../components/Header/AstroLogo.astro';
 import LeftSidebar from '../components/LeftSidebar.astro';
-import Search from '../components/Header/Search.astro';
+// import Search from '../components/Header/Search.astro';
 import HeaderLink from '../components/Header/HeaderLink.astro';
 import { SITE } from '@/config';
 import { parseTitle, sortPosts, getIndex } from '@/util';
@@ -191,7 +191,7 @@ let prevUrl = postIndex < allPosts.length ? allPosts[allPosts.length - postIndex
             <a class="logo inline-block md:hidden visible" href="/"><AstroLogo size={40} /> </a>
             <span data-pagefind-meta="title">{title}</span>
             <!-- <Search /> -->
-            <HeaderLink href={`mailto:service@talklinksg.com`}>Contact Us</HeaderLink>
+            <!-- <HeaderLink href={`mailto:service@talklinksg.com`}>Contact Us</HeaderLink> -->
           </h1>
           <slot />
           <!-- <div class="flex align-middle justify-center mt-4">
@@ -205,9 +205,10 @@ let prevUrl = postIndex < allPosts.length ? allPosts[allPosts.length - postIndex
           <hr />
           <div class="flex justify-between md:flex-row flex-col mt-2 post-footer">
             <div class="text-gray-800 dark:text-gray-200 flex-1">
-              {nextUrl ? <a href={nextUrl}>Pre Page |</a> : null}
+              <!-- {nextUrl ? <a href={nextUrl}>Pre Page |</a> : null}
               {prevUrl ? <a href={prevUrl}>Next Page |</a> : null}
-              <a href="/">Home</a>
+              <a href="/">Home</a> -->
+              <HeaderLink href={`mailto:service@talklinksg.com`}>Contact Us</HeaderLink>
             </div>
             <div class="md:mt-0 mt-4 flex-1 text-right" style="color:red">
               Please enter the email address where you would like to receive your eSIM card in the notes section of your WeChat payment QR code.
