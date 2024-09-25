@@ -6,7 +6,7 @@ const extractTitlePart = (currentPage: string) => {
 // Convert to title
 export const parseTitle = (currentPage: string) => {
   const oldTitle = extractTitlePart(currentPage);
-  let title = `第${oldTitle.split('-')[0]}期 - ${oldTitle.split('-')[1]}`;
+  let title = oldTitle;
   if (title.endsWith('/')) {
     title = title.slice(0, -1);
   }
