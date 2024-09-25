@@ -202,18 +202,13 @@ let prevUrl = postIndex < allPosts.length ? allPosts[allPosts.length - postIndex
           </div> -->
           <hr />
           <div class="flex justify-between md:flex-row flex-col mt-2 post-footer">
-            <!-- <div class="text-gray-800 dark:text-gray-200 flex-1">
-              发布日期：<a
-                href={`https://github.com/${SITE.repo}/tree/main/src/pages${url}.md`}
-                target="_blank"
-                data-pagefind-sort="date"
-                title="Edit">{date}</a
-              >
-            </div> -->
-            <div class="md:mt-0 mt-4 flex-1 text-right">
+            <div class="text-gray-800 dark:text-gray-200 flex-1">
               {nextUrl ? <a href={nextUrl}>Pre Page |</a> : null}
               {prevUrl ? <a href={prevUrl}>Next Page |</a> : null}
               <a href="/">Home</a>
+            </div>
+            <div class="md:mt-0 mt-4 flex-1 text-right">
+              Please enter the email address where you would like to receive your eSIM card in the notes section.
               <!-- <a href={`https://twitter.com/${SITE.twitterId}`} target="_blank" title="Follow">Twitter</a>
               <a
                 href={`https://github.com/${SITE.githubId}/weekly`}
