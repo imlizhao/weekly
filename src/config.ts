@@ -1,5 +1,5 @@
 export const SITE = {
-  title: 'eSIM711 for Cannada',
+  title: 'CA.eSIM711',
   author: 'Admin',
   description: 'Expert eSIM card services.',
   keywords: 'eSIM,eSim,esim',
