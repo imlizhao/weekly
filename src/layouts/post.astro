@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import AstroLogo from '../components/Header/AstroLogo.astro';
 import LeftSidebar from '../components/LeftSidebar.astro';
 import Search from '../components/Header/Search.astro';
+import HeaderLink from '../components/Header/HeaderLink.astro';
 import { SITE } from '@/config';
 import { parseTitle, sortPosts, getIndex } from '@/util';
 
@@ -190,6 +191,7 @@ let prevUrl = postIndex < allPosts.length ? allPosts[allPosts.length - postIndex
             <a class="logo inline-block md:hidden visible" href="/"><AstroLogo size={40} /> </a>
             <span data-pagefind-meta="title">{title}</span>
             <Search />
+            <HeaderLink href={`mailto:service@talklinksg.com`}>Contact Us</HeaderLink>
           </h1>
           <slot />
           <!-- <div class="flex align-middle justify-center mt-4">
